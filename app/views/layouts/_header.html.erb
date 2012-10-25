@@ -17,12 +17,10 @@
 				</div>
 			</form>
 			<ul class="nav nav-pills pull-right">
-				<li><a href=index.html>Home</a></li>
-				<li><a href=products.html>Products</a></li>
-				<li><a href=about.html>About Us</a></li>
-				<li class=active>
-					<a href=contact.html>Contact</a>
-				</li>
+				<li<%= %q( class="active").html_safe if current_page?(root_path) %>><%= link_to "Home", root_path %></li>
+				<li<%= %q( class="active").html_safe if current_page?(products_path) %>><%= link_to "Products", products_path %></li>
+				<li<%= %q( class="active").html_safe if current_page?(about_path) %>><%= link_to "About us", about_path %></li>
+				<li<%= %q( class="active").html_safe if current_page?(contact_path) %>><%= link_to "Contact", contact_path %></li>
 			</ul>
 		</nav>
 	</div>
