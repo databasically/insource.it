@@ -8,9 +8,9 @@
 	  <title>Insource IT</title>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
-	  <%= javascript_include_tag "boostrap.min" %>
-	  <%= javascript_include_tag "lightbox" %>
-	  <%= javascript_include_tag "style" %>
+	  <%= stylesheet_link_tag "boostrap.min" %>
+	  <%= stylesheet_link_tag "lightbox" %>
+	  <%= stylesheet_link_tag "style" %>
 	  
 	  <%= csrf_meta_tags %>
 	  <!-- Data about Data, so meta -->
@@ -36,11 +36,11 @@
 	<%= render 'layouts/footer' %>
 	
 	<!-- JS & bottom like zhe pro's -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.min.js"></script>
-	<script src="js/libs/lightbox.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/script.js"></script>
+	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
+	<%= javascript_include_tag "bootstrap.min" %>
+	<%= javascript_include_tag "lightbox" %>
+	<%= javascript_include_tag "plugins" %>
+	<%= javascript_include_tag "script" %>
 	
 	<!-- Google analytics snippet, remove it when you dont use GA -->
 	<script>
