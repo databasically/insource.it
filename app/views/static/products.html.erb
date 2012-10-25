@@ -11,7 +11,7 @@
 			<ul class="thumbnails">
 				<li class="span3">
 					<div class="thumbnail">
-						<img src="img/products/1.png" alt="">
+						<%= image_tag "products/1.png" %>
 						<div class=caption>
 							<h3>Small</h3>
 							<hr>
@@ -30,7 +30,7 @@
 				</li>
 				<li class="span3">
 					<div class="thumbnail">
-						<img src="img/products/2.png" alt="">
+						<%= image_tag "products/2.png" %>
 						<div class=caption>
 							<h3>Medium</h3>
 							<hr>
@@ -49,7 +49,7 @@
 				</li>
 				<li class="span3">
 					<div class="thumbnail">
-						<img src="img/products/3.png" alt="">
+						<%= image_tag "products/3.png" %>
 						<div class=caption>
 							<h3>Large</h3>
 							<hr>
@@ -68,7 +68,7 @@
 				</li>
 				<li class="span3">
 					<div class="thumbnail">
-						<img src="img/products/4.png" alt="">
+						<%= image_tag "products/4.png" %>
 						<div class=caption>
 							<h3>Ultra</h3>
 							<hr>
@@ -116,14 +116,10 @@
 		<div class=span3>
 			<ul class="thumbnails">
 				<li class="span3">
-					<a href="img/media/normal/Image003.jpg" rel="lightbox[album1]" class="thumbnail">
-						<img src="img/media/thumbs/Image003.jpg" alt="">
-					</a>
+					<%= link_to image_tag("media/normal/Image003.jpg"), "media/normal/Image003.jpg", :rel=> "lightbox[album1]", :class => "thumbnail" %>
 				</li>
 				<li class="span3">
-					<a href="img/media/normal/Image007.jpg" rel="lightbox[album1]" class="thumbnail">
-						<img src="img/media/thumbs/Image007.jpg" alt="">
-					</a>
+					<%= link_to image_tag("media/normal/Image007.jpg"), "media/normal/Image007.jpg", :rel=> "lightbox[album1]", :class => "thumbnail" %>
 				</li>
 			</ul>
 		</div>
