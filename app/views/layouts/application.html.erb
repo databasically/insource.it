@@ -27,7 +27,7 @@
 		<%= favicon_link_tag 'favicon.ico' %>
 		<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
 	
-		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+		<%=javascript_include_tag "libs/modernizr-2.5.3.min" %>
 	</head>
 <body>
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -37,8 +37,8 @@
 	
 	<!-- JS & bottom like zhe pro's -->
 	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
-	<%= javascript_include_tag "bootstrap.min" %>
-	<%= javascript_include_tag "lightbox" %>
+	<%= javascript_include_tag "libs/bootstrap.min" %>
+	<%= javascript_include_tag "libs/lightbox" %>
 	<%= javascript_include_tag "plugins" %>
 	<%= javascript_include_tag "script" %>
 	

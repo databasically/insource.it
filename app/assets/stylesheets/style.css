@@ -1,6 +1,6 @@
 /* General Stuffs */
 body {
-	background: url("../img/gplay.png") repeat-x;
+	background: url(gplay.png) repeat-x;
 }
 
 h1, h2, h3, h4, h5 {
@@ -118,7 +118,7 @@ section.featured .span6 i {
 	float: left;
 	width: 60px;
 	height: 60px;
-	background: url('../img/icons.png');
+	background: url(icons.png);
 	margin: 10px 20px 45px 10px;
 }
 
