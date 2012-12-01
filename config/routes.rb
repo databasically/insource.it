@@ -53,6 +53,7 @@ Insource::Application.routes.draw do
   match 'about' => 'static#about'
   match 'contact' => 'static#contact'
   match 'products' => 'static#products'
+  match 'request' => 'static#request'
 
   # See how all your routes lay out with "rake routes"
 
