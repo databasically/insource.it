@@ -22,7 +22,7 @@
 							</ul>
 							<hr>
 							<div>
-								<%= link_to "Help!", 'http://eepurl.com/swzHb', :class => "btn btn-success" %>
+								<%= link_to "Help!", 'http://eepurl.com/swzHb', :class => "btn btn-success", :onclick => "_gaq.push(['_trackEvent', 'Newsletters', 'Signup', 'Helpdesk']);" %>
 								<a href="#" class="btn pull-right">Info</a>
 							</div>
 						</div>
@@ -41,7 +41,7 @@
 							</ul>
 							<hr>
 							<div>
-								<a href="#" class="btn btn-success">Buy Now</a>
+								<%= link_to "Signup", '#', :class => "btn btn-success", :onclick => "_gaq.push(['_trackEvent', 'Newsletters', 'Signup', 'Maintenance']);" %>
 								<a href="#" class="btn pull-right">Info</a>
 							</div>
 						</div>
@@ -60,7 +60,7 @@
 							</ul>
 							<hr>
 							<div>
-								<a href="#" class="btn btn-success">Buy Now</a>
+								<%= link_to "Signup", '#', :class => "btn btn-success", :onclick => "_gaq.push(['_trackEvent', 'Newsletters', 'Signup', 'Onsite']);" %>
 								<a href="#" class="btn pull-right">Info</a>
 							</div>
 						</div>
@@ -79,7 +79,7 @@
 							</ul>
 							<hr>
 							<div>
-								<a href="#" class="btn btn-success">Buy Now</a>
+								<%= link_to "Signup", '#', :class => "btn btn-success", :onclick => "_gaq.push(['_trackEvent', 'Newsletters', 'Signup', 'Projects']);" %>
 								<a href="#" class="btn pull-right">Info</a>
 							</div>
 						</div>
