@@ -54,9 +54,10 @@ Insource::Application.routes.draw do
   match 'contact' => 'static#contact'
   match 'products' => 'static#products'
   match 'request' => 'static#request'
+  match 'request_thanks' => 'static#request_thanks'
   match 'newsletter_signup' => 'static#newsletter_signup'
   match 'newsletter_signup_thanks' => 'static#newsletter_signup_thanks'
-  match 'newsletter_email_thanks' => 'static#newsletter_signup_thanks'
+  match 'newsletter_email_thanks' => 'static#newsletter_email_thanks'
 
   # See how all your routes lay out with "rake routes"
 
