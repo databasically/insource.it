@@ -18,9 +18,10 @@
 		<div class="span8">
 			<h2>Our contact information</h2>
 			<%= render 'partials/address' %>
-			<h2>Some story about contact</h2>
-			<p>Duis mattis tortor vitae sem hendrerit viverra. Vestibulum diam metus, aliquam sed lobortis sit amet, pellentesque non mi. Sed nisl sapien, vulputate ut porta eu, interdum in ante. Integer scelerisque, nisl eget eleifend congue, quam nibh volutpat nibh, sit amet pellentesque nisl orci at nisi.</p>
-			<p>Mauris lobortis gravida mauris, vel vestibulum quam dignissim ac. Vestibulum enim augue, feugiat sit amet auctor ullamcorper, placerat non erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent orci ipsum.</p>
+			<h2>We are here to help</h2>
+			<p>
+				If you aren't already a customer and you are in urgent need of assistance, please include urgent in the subject of your message.
+			</p>
 		</div>
 		<div class=span4>
 			<!-- ALL the fancy twitter stuff = here -->
@@ -65,7 +66,26 @@
 					<small>send us an email</small>
 				</h1>
 			</header>
-			<form method=post class=form-horizontal>
+			<div id="wufoo-q7x2x3">
+				Fill out my <a href="http://databasically1.wufoo.com/forms/q7x2x3">online form</a>.
+			</div>
+			<script type="text/javascript">
+				var q7x2x3;(function(d, t) {
+				var s = d.createElement(t), options = {
+				'userName':'databasically1', 
+				'formHash':'q7x2x3', 
+				'autoResize':true,
+				'height':'497',
+				'async':true,
+				'header':'show'};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { q7x2x3 = new WufooForm();q7x2x3.initialize(options);q7x2x3.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');
+			</script>
+<!-- 			<form method=post class=form-horizontal>
 				<fieldset>
 					<div class=control-group>
 						<label class="control-label" for="input01">E-mail address</label>
@@ -92,7 +112,7 @@
 						</div>
 					</div>
 				</fieldset>
-			</form>
+			</form> -->
 		</div>
 	</section>
 </article>
