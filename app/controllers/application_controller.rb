@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  
+
   before_filter :ensure_domain if !Rails.env.development?
 
-  APP_DOMAIN = 'insource.it'
+  APP_DOMAIN = 'www.insource.it'
 
   def ensure_domain
     if request.env['HTTP_HOST'] != APP_DOMAIN
@@ -11,5 +11,5 @@ class ApplicationController < ActionController::Base
       redirect_to "http://#{APP_DOMAIN}", :status => 301
     end
   end
-  
+
 end
